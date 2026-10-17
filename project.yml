@@ -45,8 +45,6 @@ targets:
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
-        NSAppTransportSecurity:
-          NSAllowsArbitraryLoads: true
     entitlements:
       path: XuloDemo/XuloDemo.entitlements
       properties:
