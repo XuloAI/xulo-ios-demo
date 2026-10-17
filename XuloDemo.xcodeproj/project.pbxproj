@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1244F79D1653226053B4E009 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF378DD34FB3E40C71ECE735 /* DemoView.swift */; };
+		261CFDD121A4AA9E0A379CEB /* NotificationContent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2E7C1711BCF546015BD1097F /* NotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F03B91F190B5135CEF6DDFC /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C7EF384D676324E7AE69BB /* NotificationService.swift */; };
+		62BB0769342D86ABB9441D8C /* Xulo in Frameworks */ = {isa = PBXBuildFile; productRef = 06EBC459B620B09532C0BC23 /* Xulo */; };
+		66E6F817C33127506D843E11 /* XuloDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE7BCBAE17F53EB19C7F5B /* XuloDemoApp.swift */; };
+		6E1E56043BD1AA37FCE7AAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB3EA24970CAFDF9B336D2A /* AppDelegate.swift */; };
+		75113A4CB32BF12E7949845C /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05FB132A5EB1ADDA86D2F6B /* DemoModel.swift */; };
+		9E7D2D320BC2091C9F22D2AA /* DemoChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98C0B03705B8053F6239D24 /* DemoChecks.swift */; };
+		A4C5F816B11FE455AE91F705 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460F38E2A6448AA55BB9E772 /* NotificationViewController.swift */; };
+		AFA4E894C5A070E7179DF28D /* XuloExtension in Frameworks */ = {isa = PBXBuildFile; productRef = B697EF31B5FAB575BDA6AE72 /* XuloExtension */; };
+		DF9CACABC6920A1BA99A964B /* XuloExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 971E7B71C346D3255B18BD5C /* XuloExtension */; };
+		FE89411D325B8212060622D6 /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 428C1C5E805630B706FE3F1C /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AC2FCC174B9448BC2ED4522 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEA1AC6D059D472A81C92640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26B069A2FDF687ABE257A9A5;
+			remoteInfo = NotificationContent;
+		};
+		972644B250B68A5F78FDF85F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEA1AC6D059D472A81C92640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3001B130DD8571DA6E4A44E4;
+			remoteInfo = NotificationService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		067CFB4929B27564EB25D99A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FE89411D325B8212060622D6 /* NotificationService.appex in Embed Foundation Extensions */,
+				261CFDD121A4AA9E0A379CEB /* NotificationContent.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1EDE7BCBAE17F53EB19C7F5B /* XuloDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XuloDemoApp.swift; sourceTree = "<group>"; };
+		20C7EF384D676324E7AE69BB /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		22B6159A24D1C7C17182917B /* XuloDemo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = XuloDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E7C1711BCF546015BD1097F /* NotificationContent.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = NotificationContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F59925AAF20D409C9DEB81F /* NotificationContent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationContent.entitlements; sourceTree = "<group>"; };
+		428C1C5E805630B706FE3F1C /* NotificationService.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		460F38E2A6448AA55BB9E772 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		55640AE926D7D077E99F0849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		70132C81EF9D21F90F1F4055 /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
+		8FF406B393506B181A559D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B98C0B03705B8053F6239D24 /* DemoChecks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoChecks.swift; sourceTree = "<group>"; };
+		C05FB132A5EB1ADDA86D2F6B /* DemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModel.swift; sourceTree = "<group>"; };
+		C16C6A46FB0F63AFD1C3C88D /* XuloDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XuloDemo.entitlements; sourceTree = "<group>"; };
+		DB80F81B6AC006F0705394E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EAB3EA24970CAFDF9B336D2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF378DD34FB3E40C71ECE735 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		955C1F24C34BDEDEEDAABB80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62BB0769342D86ABB9441D8C /* Xulo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		995B31C10B805060F0EDCF0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9CACABC6920A1BA99A964B /* XuloExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E497670D2DFFCE843B7567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA4E894C5A070E7179DF28D /* XuloExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57E359606BA4F61D9996DA75 /* NotificationContent */ = {
+			isa = PBXGroup;
+			children = (
+				55640AE926D7D077E99F0849 /* Info.plist */,
+				2F59925AAF20D409C9DEB81F /* NotificationContent.entitlements */,
+				460F38E2A6448AA55BB9E772 /* NotificationViewController.swift */,
+			);
+			path = NotificationContent;
+			sourceTree = "<group>";
+		};
+		A53735787765ABE02112B783 /* XuloDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EAB3EA24970CAFDF9B336D2A /* AppDelegate.swift */,
+				B98C0B03705B8053F6239D24 /* DemoChecks.swift */,
+				C05FB132A5EB1ADDA86D2F6B /* DemoModel.swift */,
+				EF378DD34FB3E40C71ECE735 /* DemoView.swift */,
+				8FF406B393506B181A559D94 /* Info.plist */,
+				C16C6A46FB0F63AFD1C3C88D /* XuloDemo.entitlements */,
+				1EDE7BCBAE17F53EB19C7F5B /* XuloDemoApp.swift */,
+			);
+			path = XuloDemo;
+			sourceTree = "<group>";
+		};
+		B77E8FF1BA7D76F008E9F789 /* NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				DB80F81B6AC006F0705394E7 /* Info.plist */,
+				70132C81EF9D21F90F1F4055 /* NotificationService.entitlements */,
+				20C7EF384D676324E7AE69BB /* NotificationService.swift */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
+		C5AA94FEBEEA07D5F689EBC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E7C1711BCF546015BD1097F /* NotificationContent.appex */,
+				428C1C5E805630B706FE3F1C /* NotificationService.appex */,
+				22B6159A24D1C7C17182917B /* XuloDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA42387AE63D75E6A1D8B99C = {
+			isa = PBXGroup;
+			children = (
+				57E359606BA4F61D9996DA75 /* NotificationContent */,
+				B77E8FF1BA7D76F008E9F789 /* NotificationService */,
+				A53735787765ABE02112B783 /* XuloDemo */,
+				C5AA94FEBEEA07D5F689EBC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		159D929BF30BAE069F01F210 /* XuloDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB4774802E2449ECC65EB7F2 /* Build configuration list for PBXNativeTarget "XuloDemo" */;
+			buildPhases = (
+				42C974558C3DFC611B495CCB /* Sources */,
+				955C1F24C34BDEDEEDAABB80 /* Frameworks */,
+				067CFB4929B27564EB25D99A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7640B64091F0B58B3BCA444 /* PBXTargetDependency */,
+				96E0A9874D8C0B2B5462B9C5 /* PBXTargetDependency */,
+			);
+			name = XuloDemo;
+			packageProductDependencies = (
+				06EBC459B620B09532C0BC23 /* Xulo */,
+			);
+			productName = XuloDemo;
+			productReference = 22B6159A24D1C7C17182917B /* XuloDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26B069A2FDF687ABE257A9A5 /* NotificationContent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4E0E80ECD808D862521D3B2 /* Build configuration list for PBXNativeTarget "NotificationContent" */;
+			buildPhases = (
+				EC0A671376A1BFF1C01A2F28 /* Sources */,
+				C8E497670D2DFFCE843B7567 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationContent;
+			packageProductDependencies = (
+				B697EF31B5FAB575BDA6AE72 /* XuloExtension */,
+			);
+			productName = NotificationContent;
+			productReference = 2E7C1711BCF546015BD1097F /* NotificationContent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3001B130DD8571DA6E4A44E4 /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D1EDACB4E25834852BD60D4 /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				01BBA7A27BC74AE0EE383C1A /* Sources */,
+				995B31C10B805060F0EDCF0E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationService;
+			packageProductDependencies = (
+				971E7B71C346D3255B18BD5C /* XuloExtension */,
+			);
+			productName = NotificationService;
+			productReference = 428C1C5E805630B706FE3F1C /* NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEA1AC6D059D472A81C92640 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					159D929BF30BAE069F01F210 = {
+						ProvisioningStyle = Automatic;
+					};
+					26B069A2FDF687ABE257A9A5 = {
+						ProvisioningStyle = Automatic;
+					};
+					3001B130DD8571DA6E4A44E4 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AEB1E4BB2F434346000E23CA /* Build configuration list for PBXProject "XuloDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EA42387AE63D75E6A1D8B99C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FEEFA67538C44C248D4772FC /* XCRemoteSwiftPackageReference "xulo-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C5AA94FEBEEA07D5F689EBC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26B069A2FDF687ABE257A9A5 /* NotificationContent */,
+				3001B130DD8571DA6E4A44E4 /* NotificationService */,
+				159D929BF30BAE069F01F210 /* XuloDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01BBA7A27BC74AE0EE383C1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F03B91F190B5135CEF6DDFC /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C974558C3DFC611B495CCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1E56043BD1AA37FCE7AAA7 /* AppDelegate.swift in Sources */,
+				9E7D2D320BC2091C9F22D2AA /* DemoChecks.swift in Sources */,
+				75113A4CB32BF12E7949845C /* DemoModel.swift in Sources */,
+				1244F79D1653226053B4E009 /* DemoView.swift in Sources */,
+				66E6F817C33127506D843E11 /* XuloDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0A671376A1BFF1C01A2F28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C5F816B11FE455AE91F705 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96E0A9874D8C0B2B5462B9C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26B069A2FDF687ABE257A9A5 /* NotificationContent */;
+			targetProxy = 8AC2FCC174B9448BC2ED4522 /* PBXContainerItemProxy */;
+		};
+		F7640B64091F0B58B3BCA444 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3001B130DD8571DA6E4A44E4 /* NotificationService */;
+			targetProxy = 972644B250B68A5F78FDF85F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B479E7CB7847DD7DB848246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = NotificationContent/NotificationContent.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NotificationContent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.xulo.demo.NotificationContent;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28CE37C3817DAFC540E2A15C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B3E425EAF8572D041C54B95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = NotificationContent/NotificationContent.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NotificationContent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.xulo.demo.NotificationContent;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E0ADBE2FEFACDA60925520B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7300761B5C77EBC6FD30E216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XuloDemo/XuloDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = XuloDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.xulo.demo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8967DFBD8F70C9D16BF95981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.xulo.demo.NotificationService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CADB8F0B0FEE8AA1C900DC54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.xulo.demo.NotificationService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE8EEF8AEA60277F05DAB6D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XuloDemo/XuloDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = XuloDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.xulo.demo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D1EDACB4E25834852BD60D4 /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8967DFBD8F70C9D16BF95981 /* Debug */,
+				CADB8F0B0FEE8AA1C900DC54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AEB1E4BB2F434346000E23CA /* Build configuration list for PBXProject "XuloDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E0ADBE2FEFACDA60925520B /* Debug */,
+				28CE37C3817DAFC540E2A15C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CB4774802E2449ECC65EB7F2 /* Build configuration list for PBXNativeTarget "XuloDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7300761B5C77EBC6FD30E216 /* Debug */,
+				EE8EEF8AEA60277F05DAB6D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D4E0E80ECD808D862521D3B2 /* Build configuration list for PBXNativeTarget "NotificationContent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B479E7CB7847DD7DB848246 /* Debug */,
+				2B3E425EAF8572D041C54B95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEEFA67538C44C248D4772FC /* XCRemoteSwiftPackageReference "xulo-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/XuloAI/xulo-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06EBC459B620B09532C0BC23 /* Xulo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEEFA67538C44C248D4772FC /* XCRemoteSwiftPackageReference "xulo-ios-sdk" */;
+			productName = Xulo;
+		};
+		971E7B71C346D3255B18BD5C /* XuloExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEEFA67538C44C248D4772FC /* XCRemoteSwiftPackageReference "xulo-ios-sdk" */;
+			productName = XuloExtension;
+		};
+		B697EF31B5FAB575BDA6AE72 /* XuloExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEEFA67538C44C248D4772FC /* XCRemoteSwiftPackageReference "xulo-ios-sdk" */;
+			productName = XuloExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BEA1AC6D059D472A81C92640 /* Project object */;
+}
