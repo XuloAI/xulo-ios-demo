@@ -8,13 +8,13 @@ The Xcode project already depends on the closed package:
 https://github.com/XuloAI/xulo-ios-sdk
 ```
 
-Xcode downloads version 0.1.0 or later, up to the next major version.
+Xcode downloads version 0.1.2 or later, up to the next major version.
 
 ## Requirements
 
 - Xcode 16 or later
 - iOS 15 or later
-- An app and an API key from [xulo.io](https://xulo.io)
+- An app and its App ID from [xulo.io](https://xulo.io)
 - A physical iPhone for a real push. The simulator can run the API checks. It does not receive remote notifications.
 
 ## Open the project
