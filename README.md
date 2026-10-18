@@ -52,7 +52,7 @@ Create an app in the panel with the bundle id `app.xulo.demo`. Add the Apple key
 
 Build and run on a phone.
 
-On the first screen, paste the organization API key and tap Start.
+On the first screen, paste the App ID and tap Start.
 
 Tap Allow push and accept the system prompt. The subscription id on that screen is the device in the panel.
 

@@ -5,7 +5,7 @@ import Xulo
 @MainActor
 final class DemoModel: ObservableObject {
     static let serviceURL = URL(string: "https://xulo.io")!
-    @Published var apiKey: String
+    @Published var appId: String
     @Published var externalId: String
     @Published var tagKey: String
     @Published var tagValue: String
@@ -43,7 +43,7 @@ final class DemoModel: ObservableObject {
 
     init() {
         let defaults = UserDefaults.standard
-        apiKey = defaults.string(forKey: "xulo.key") ?? ""
+        appId = defaults.string(forKey: "xulo.appId") ?? ""
         externalId = defaults.string(forKey: "xulo.external") ?? "demo-user"
         tagKey = "plan"
         tagValue = "demo"
@@ -59,15 +59,15 @@ final class DemoModel: ObservableObject {
     }
 
     func start() {
-        let key = apiKey.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !key.isEmpty else {
-            note("Paste the organization API key.")
+        let id = appId.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !id.isEmpty else {
+            note("Paste the App ID.")
             return
         }
-        UserDefaults.standard.set(key, forKey: "xulo.key")
+        UserDefaults.standard.set(id, forKey: "xulo.appId")
         Xulo.crashesEnabled = crashesEnabled
         bindOpen()
-        Xulo.start(apiKey: key, bundleId: bundleId)
+        Xulo.start(appId: id, bundleId: bundleId)
         note("Started. A session is open while the app is in front.")
         refreshLater()
     }

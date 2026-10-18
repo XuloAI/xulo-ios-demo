@@ -28,7 +28,7 @@ struct DemoView: View {
 
     private var connection: some View {
         Card(title: "Connection") {
-            Field(title: "Organization API key", text: $model.apiKey)
+            Field(title: "App ID", text: $model.appId)
             DemoButton(title: "Start") { model.start() }
         }
     }

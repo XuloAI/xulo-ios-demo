@@ -35,7 +35,7 @@ enum DemoHTTP {
         request.httpBody = data
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json", forHTTPHeaderField: "Accept")
-        request.setValue(key, forHTTPHeaderField: "X-Xulo-Key")
+        request.setValue(key, forHTTPHeaderField: "X-Xulo-App-Id")
         do {
             let (payload, response) = try await URLSession.shared.data(for: request)
             let status = (response as? HTTPURLResponse)?.statusCode ?? 0
@@ -71,9 +71,9 @@ enum DemoSuite {
 
     static func run(_ model: DemoModel) async {
         let base = DemoModel.serviceURL
-        let key = model.apiKey.trimmingCharacters(in: .whitespacesAndNewlines)
+        let key = model.appId.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !key.isEmpty else {
-            model.finish("register", passed: false, detail: "Paste the organization API key, then run again.")
+            model.finish("register", passed: false, detail: "Paste the App ID, then run again.")
             model.skipRest(after: "register")
             return
         }
