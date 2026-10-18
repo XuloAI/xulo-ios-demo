@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/XuloAI/xulo-ios-sdk",
       "state" : {
-        "revision" : "99deddf95c3ecf6e5bde6c17b0cd8f9de522f759",
-        "version" : "0.1.3"
+        "revision" : "2b5c4736032b4f612f47d6ca6182b0ff0708b78a",
+        "version" : "0.1.4"
       }
     }
   ],
