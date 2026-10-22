@@ -52,7 +52,7 @@ final class DemoModel: ObservableObject {
         orderId = "order-1"
         callName = "demo"
         pushURL = "https://example.com/match"
-        draftId = "1"
+        draftId = ""
         handleLink = false
         crashesEnabled = true
         bindOpen()
@@ -141,9 +141,7 @@ final class DemoModel: ObservableObject {
         let url = pushURL.trimmingCharacters(in: .whitespacesAndNewlines)
         var extra: [String: Any] = ["source": "demo"]
         let raw = draftId.trimmingCharacters(in: .whitespacesAndNewlines)
-        if let number = Int(raw) {
-            extra["draft_id"] = number
-        } else if !raw.isEmpty {
+        if !raw.isEmpty {
             extra["draft_id"] = raw
         }
         var custom: [String: Any] = ["a": extra]
