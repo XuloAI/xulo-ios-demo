@@ -8,7 +8,7 @@ The Xcode project already depends on the closed package:
 https://github.com/XuloAI/xulo-ios-sdk
 ```
 
-Xcode downloads version 0.1.5 or later, up to the next major version.
+Xcode downloads version 0.1.6 or later, up to the next major version.
 
 ## Requirements
 

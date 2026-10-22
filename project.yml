@@ -15,7 +15,7 @@ settings:
 packages:
   Xulo:
     url: https://github.com/XuloAI/xulo-ios-sdk
-    from: 0.1.5
+    from: 0.1.6
 targets:
   XuloDemo:
     type: application
